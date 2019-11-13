@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+	<div class="siv">
+	  <button id="sear" onclick="myFunction()" >Click Me!</button>
+		<img id="diceImg" src="" style="width:350px;height:350px;" alt="Roll The Dice">
+
+  
+	<script>
+		function myFunction() {
+			var maximum = 6;
+			var minimum = 1;	
+			var randomnumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+			var file = randomnumber + '.png';
+			var x = document.getElementById('diceImg');
+			x.setAttribute("src", file);
+		}
+	</script>
+	</div>
+  </body>
+</html>
+
+
